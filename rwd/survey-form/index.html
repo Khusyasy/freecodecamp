@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1 id="title">KhuLancer Survey Form</h1>
+        <p id="description">
+          Thank you for using our platform, help us keep improving.
+        </p>
+      </div>
+      <form id="survey-form" action="." method="get">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input class="form-item" type="text" id="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input class="form-item" type="email" id="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input class="form-item" type="number" id="number" min="1" max="999" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="dropdown">Which option describe your current job type</label>
+          <select class="form-item" id="dropdown">
+            <option value="fulltime">Full time</option>
+            <option value="parttime">Part time</option>
+            <option value="project">Project based</option>
+            <option value="contract">Contract</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="dropdown">How would you rate our platform</label>
+          <label class="label-container">
+            <input class="form-item" type="radio" name="rating" value="excellent" checked>Excellent
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="radio" name="rating" value="good">Good
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="radio" name="rating" value="average">Average
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="radio" name="rating" value="bad">Bad
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="dropdown">Suggestions for improvements</label>
+          <label class="label-container">
+            <input class="form-item" type="checkbox" name="improvements" value="interface">Interface
+            improvements
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="checkbox" name="improvements" value="features">New features
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="checkbox" name="improvements" value="bugfixes">Bug fixes
+          </label>
+          <label class="label-container">
+            <input class="form-item" type="checkbox" name="improvements" value="other">Other
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="comments">Any other comments or suggestions? (optional)</label>
+          <textarea class="form-item" id="comments" name="comments" rows="5" cols="30"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">Submit Survey</button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>
